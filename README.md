@@ -33,3 +33,15 @@ test
 ```bash
 CUDA_VISIBLE_DEVICES=0 python main.py /train_list_of_your_data /test_list_of_your_data /data_path --evaluate --resume your_pretrained_mode_path -b12 -j4
 ```
+
+### Result
+
+the networks were trained from scratch.
+UCF101 only use the split 1.
+all the test results are getten from validation split and only use one centre crop.
+
+|      |  top1    |  top5    |
+| :----: | :----: | :----: |
+|  UCF101    |  55.4%    |  79.0%    |
+|  sthsth    |  51.3%    |  79.9%    |
+
